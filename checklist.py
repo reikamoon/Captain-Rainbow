@@ -35,6 +35,16 @@ def test():
     print(read(0))
 
     list_all_items()
+    Select("C")
+    # View the results
+    list_all_items()
+    #Call function with new value
+    Select("R")
+    #View results
+    list_all_items()
+    #continue until all code is run
+    select("U")
+
 # Mark Completed function
 def mark_completed(index):
     update(index,"√" + checklist[index])
@@ -56,6 +66,8 @@ def select(function_code):
     #Print all items
     elif function_code == "P":
         list_all_items()
+    elif function_code == "Q":
+        return False
     #Catch all
     else:
     print("Unknown Option")
@@ -69,5 +81,5 @@ def user_input(prompt):
 running = True
 while running:
     selection = user_input(
-    "Type C to create, R to read, and P to display current list."
-    )
+    "Type C to create, R to read, and P to display current list.")
+ running = select(selection)
