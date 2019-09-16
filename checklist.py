@@ -40,6 +40,20 @@ def mark_completed(index):
     update(index,"√" + checklist[index])
     print()
 
+# Select function
+def select(function_code):
+    #Create Item
+    if function_code == "C":
+        input_item = user_input("Input item:")
+        create(input_item)
+    #Read Item
+    elif function_code == "R":
+        item_index = user_input("Index Number?")
+
+        #Remember that item_index must actually exist or our program will crash.
+        read(item_index)
+
+
 #The input function will display a message in the terminal and wait for user input.
 def user_input(prompt):
     user_inpute = input(prompt)
