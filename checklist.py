@@ -53,8 +53,21 @@ def select(function_code):
         #Remember that item_index must actually exist or our program will crash.
         read(item_index)
 
+    #Print all items
+    elif function_code == "P":
+        list_all_items()
+    #Catch all
+    else:
+    print("Unknown Option")
+    return True
 
 #The input function will display a message in the terminal and wait for user input.
 def user_input(prompt):
     user_inpute = input(prompt)
     return user_input
+# test function
+running = True
+while running:
+    selection = user_input(
+    "Type C to create, R to read, and P to display current list."
+    )
