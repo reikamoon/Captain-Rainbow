@@ -1,2 +1,2 @@
 # Captain-Rainbow
-Captain-Rainbow Redo by Anjelica Ambrosio
+Captain-Rainbow Tutorial Redo by reikamoon :ribbon:
